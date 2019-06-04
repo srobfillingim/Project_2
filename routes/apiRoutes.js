@@ -1,24 +1,24 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  // Get all roadTrips
+  app.get("/api/roadTrips", function(req, res) {
+    db.RoadTrips.findAll({}).then(function(dbRoadTrips) {
+      res.json(dbRoadTrips);
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // Create a new roadTrip
+  app.post("/api/roadTrips", function(req, res) {
+    db.RoadTrip.create(req.body).then(function(dbRoadTrip) {
+      res.json(dbRoadTrip);
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  // Delete a roadTrip by id
+  app.delete("/api/roadTrips/:id", function(req, res) {
+    db.RoadTrip.destroy({ where: { id: req.params.id } }).then(function(dbRoadTrip) {
+      res.json(dbRoadTrip);
     });
   });
 };
