@@ -20,19 +20,11 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script type="text/javascript">
-    $document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $('.dropdown-trigger').dropdown();
-  </script>
 </head>
 
 <body>
+    <div class="container mt-5">
+
   <nav class="nav-extended">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Logo</a>
@@ -53,84 +45,77 @@
   </nav>
   <br>
   <div class="row">
-    <div class="col s6 offset-s6">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
+      <div class="col s7 push-s5">
+      
+    
+    <div class="card">
+      <div class="card-heading text-center">
+        <h3>Add New Getaway</h3>
+      </div>
+      <div class="card-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="state-input">State:</label>
+            <input class="form-control" id="state-input" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="city-input">City:</label>
+            <input class="form-control" id="city-input" type="text" />
+          </div>
+          <div class="form-group">
+            <ul id="getaway_type" class="form_checks">
+              <li id="types_1" class="check">
+                <label for="type-input" class="check_label">
+                  Type of Getaway
+                </label>
+                <div class="form-group">
+                  <ul class="check_checkbox" id="input_33_1">
+                    <li class="type1">
+                      <input name="romantic_input" type="checkbox" class="filled-in" value="Romantic" id="type1">
+                      <label for="type1" id="rtrip_type1">
+                        Romantic
+                      </label>
+                    </li>
+                    <li class="type2">
+                      <input name="family_input" type="checkbox" class="filled-in" value="Family" id="type2">
+                      <label for="type2" id="rtrip_type2">
+                        Family
+                      </label>
+                    </li>
+                    <li class="type3">
+                      <input name="friends_input" type="checkbox" class="filled-in" value="Friends" id="type3">
+                      <label for="type3" id="rtrip_type3">
+                        Friends
+                      </label>
+                    </li>
+                    <li class="type4">
+                      <input name="solo_input" type="checkbox" class="filled-in" value="Solo" id="type4">
+                      <label for="type4" id="rtrip_type4">
+                        Solo
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              
+              <div class="form-group" margin="3">
+                <label for="loging-input">Where you slept:</label>
+                <input class="form-control" id="loging-input" type="text" />
+              </div>
+
+              <div class="form-group">
+                <label for="activity-input">Activities:</label>
+                <input class="form-control" id="activity-input" type="text" />
+              </div>
+              <button class="btn btn-primary" id="add-getaway" type="submit">
+                Submit
+              </button>
+        </form>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="jumbotron text-center">
-        <h1>Route 66</h1>
-    </div>
-</div>
-<div class="container" id="train-schedule">
-    <div class="card">
-        <div class="card-heading text-center">
-            <h3>Tell Us about your Road Trip</h3>
-        </div>
-
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>State</th>
-                    <th>City</th>
-                    <th>Type</th>
-                    <th>Accomodations</th>
-                    <th>Activities</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-
-    </div>
-
-</div>
-<div class="container mt-5">
-    <div class="card">
-        <div class="card-heading text-center">
-            <h3>Add New Getaway</h3>
-        </div>
-        <div class="card-body">
-            <form role="form">
-                <div class="form-group">
-                    <label for="state-input">State:</label>
-                    <input class="form-control" id="state-input" type="text" />
-                </div>
-                <div class="form-group">
-                    <label for="city-input">City:</label>
-                    <input class="form-control" id="city-input" type="text" />
-                </div>
-                <div class="form-group">
-                    <label for="type-input">Type of getaway:</label>
-                    <input class="form-control" id="type-input" type="text" />
-                </div>
-                <div class="form-group">
-                    <label for="loging-input">Where you slept:</label>
-                    <input class="form-control" id="loging-input" type="text" />
-                </div>
-             
-                <div class="form-group">
-                        <label for="activity-input">Activities:</label>
-                        <input class="form-control" id="activity-input" type="text" />
-                    </div>
-                <button class="btn btn-primary" id="add-getaway" type="submit">
-                    Submit
-                </button>
-            </form>
-        </div>
-    </div>
+  </div></div>
+  <div class="col s5 pull-s7"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
 </div>
 
 
