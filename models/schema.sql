@@ -2,30 +2,50 @@ DROP DATABASE IF EXISTS roadtrip_db;
 CREATE DATABASE roadtrp_db;
 USE roadtrip_db;
 
-
-CREATE TABLE States(
+CREATE TABLE roadTrip(
   id INTEGER(255) AUTO_INCREMENT NOT NULL,
-  States VARCHAR(255),
-  PRIMARY KEY (id)
+  states INTEGER(255),
+  city VARCHAR(255),
+  activities VARCHAR(255),
+  vibeType VARCHAR(255),
+  restStop VARCHAR(255),
+);
+
+CREATE TABLE states(
+  id INTEGER(255) AUTO_INCREMENT NOT NULL,
+  PRIMARY KEY (id),
 );
 
  CREATE TABLE city(
   id INTEGER(255) AUTO_INCREMENT NOT NULL,
-  stateId INTEGER(255),
-  city VARCHAR(255),
-  FOREIGN KEY (statesid) REFERENCES states(id)
+  states INTEGER(255),
+  PRIMARY KEY (id),
  );
 
-CREATE TABLE Activities(
+CREATE TABLE activities(
   id INTEGER(255) AUTO_INCREMENT NOT NULL,
-  States VARCHAR(255),
-  PRIMARY KEY (id)
+  states VARCHAR(255),
+  city VARCHAR(255),
+  PRIMARY KEY (id),
 );
 
-CREATE TABLE vibe_type(
+CREATE TABLE vibeType(
   id INTEGER(255) AUTO_INCREMENT NOT NULL,
-  States VARCHAR(255),
-  PRIMARY KEY (id)
+  states VARCHAR(255),
+  city VARCHAR(255),
+  PRIMARY KEY (id),
 );
 
+CREATE TABLE restStop(
+  id INTEGER(255) AUTO_INCREMENT NOT NULL,
+  states VARCHAR(255),
+  city VARCHAR(255),
+  PRIMARY KEY (id),
+);
 
+-- CREATE TABLE weather(
+--   id INTEGER(255) AUTO_INCREMENT NOT NULL,
+--   states VARCHAR(255),
+--   city VARCHAR(255),
+--   PRIMARY KEY (id),
+-- )
