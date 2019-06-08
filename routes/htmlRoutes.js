@@ -13,7 +13,9 @@ module.exports = function(app) {
 
   // Load roadTrip page and pass in a roadTrip by id
   app.get("/roadTrip/:id", function(req, res) {
-    db.RoadTrip.findOne({ where: { id: req.params.id } }).then(function(dbRoadTrip) {
+    db.RoadTrip.findOne({ where: { id: req.params.id } }).then(function(
+      dbRoadTrip
+    ) {
       res.render("roadTrip", {
         roadTrip: dbRoadTrip
       });
