@@ -23,6 +23,8 @@
 </head>
 
 <body>
+    <div class="container mt-5">
+
   <nav class="nav-extended">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Logo</a>
@@ -42,9 +44,10 @@
     </div>
   </nav>
   <br>
-
-
-  <div class="container mt-5">
+  <div class="row">
+      <div class="col s7 push-s5">
+      
+    
     <div class="card">
       <div class="card-heading text-center">
         <h3>Add New Getaway</h3>
@@ -60,41 +63,43 @@
             <input class="form-control" id="city-input" type="text" />
           </div>
           <div class="form-group">
-            <ul id="gform_fields_33" class="gform_fields">
-              <li id="field_33_1" class="gfield">
-                <label class="gfield_label">
+            <ul id="getaway_type" class="form_checks">
+              <li id="types_1" class="check">
+                <label for="type-input" class="check_label">
                   Type of Getaway
                 </label>
-                <div class="ginput_container">
-                  <ul class="gfield_checkbox" id="input_33_1">
-                    <li class="gchoice_33_1_1">
-                      <input name="input_1.1" type="checkbox" class="filled-in" value="Romantic" id="choice_33_1_1">
-                      <label for="choice_33_1_1" id="label_33_1_1">
+                <div class="form-group">
+                  <ul class="check_checkbox" id="input_33_1">
+                    <li class="type1">
+                      <input name="romantic_input" type="checkbox" class="filled-in" value="Romantic" id="type1">
+                      <label for="type1" id="rtrip_type1">
                         Romantic
                       </label>
                     </li>
-                    <li class="gchoice_33_1_2">
-                      <input name="input_1.2" type="checkbox" class="filled-in" value="Family" id="choice_33_1_2">
-                      <label for="choice_33_1_2" id="label_33_1_2">
+                    <li class="type2">
+                      <input name="family_input" type="checkbox" class="filled-in" value="Family" id="type2">
+                      <label for="type2" id="rtrip_type2">
                         Family
                       </label>
                     </li>
-                    <li class="gchoice_33_1_3">
-                      <input name="input_1.3" type="checkbox" class="filled-in" value="Local Sites" id="choice_33_1_3">
-                      <label for="choice_33_1_3" id="label_33_1_3">
-                        Local Sites
+                    <li class="type3">
+                      <input name="friends_input" type="checkbox" class="filled-in" value="Friends" id="type3">
+                      <label for="type3" id="rtrip_type3">
+                        Friends
                       </label>
                     </li>
-                    <li class="gchoice_33_1_4">
-                      <input name="input_1.4" type="checkbox" class="filled-in" value="Life Style" id="choice_33_1_4">
-                      <label for="choice_33_1_4" id="label_33_1_4">
-                        Night Life
+                    <li class="type4">
+                      <input name="solo_input" type="checkbox" class="filled-in" value="Solo" id="type4">
+                      <label for="type4" id="rtrip_type4">
+                        Solo
                       </label>
                     </li>
                   </ul>
                 </div>
               </li>
-              <div class="form-group">
+
+              
+              <div class="form-group" margin="3">
                 <label for="loging-input">Where you slept:</label>
                 <input class="form-control" id="loging-input" type="text" />
               </div>
@@ -109,7 +114,9 @@
         </form>
       </div>
     </div>
-  </div>
+  </div></div>
+  <div class="col s5 pull-s7"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
+</div>
 
 
 
