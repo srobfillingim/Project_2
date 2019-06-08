@@ -20,16 +20,6 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script type="text/javascript">
-    $document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $('.dropdown-trigger').dropdown();
-  </script>
 </head>
 
 <body>
@@ -52,86 +42,74 @@
     </div>
   </nav>
   <br>
-  <div class="row">
-    <div class="col s6 offset-s6">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
+
+
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-heading text-center">
+        <h3>Add New Getaway</h3>
+      </div>
+      <div class="card-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="state-input">State:</label>
+            <input class="form-control" id="state-input" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="city-input">City:</label>
+            <input class="form-control" id="city-input" type="text" />
+          </div>
+          <div class="form-group">
+            <ul id="gform_fields_33" class="gform_fields">
+              <li id="field_33_1" class="gfield">
+                <label class="gfield_label">
+                  Type of Getaway
+                </label>
+                <div class="ginput_container">
+                  <ul class="gfield_checkbox" id="input_33_1">
+                    <li class="gchoice_33_1_1">
+                      <input name="input_1.1" type="checkbox" class="filled-in" value="Romantic" id="choice_33_1_1">
+                      <label for="choice_33_1_1" id="label_33_1_1">
+                        Romantic
+                      </label>
+                    </li>
+                    <li class="gchoice_33_1_2">
+                      <input name="input_1.2" type="checkbox" class="filled-in" value="Family" id="choice_33_1_2">
+                      <label for="choice_33_1_2" id="label_33_1_2">
+                        Family
+                      </label>
+                    </li>
+                    <li class="gchoice_33_1_3">
+                      <input name="input_1.3" type="checkbox" class="filled-in" value="Local Sites" id="choice_33_1_3">
+                      <label for="choice_33_1_3" id="label_33_1_3">
+                        Local Sites
+                      </label>
+                    </li>
+                    <li class="gchoice_33_1_4">
+                      <input name="input_1.4" type="checkbox" class="filled-in" value="Life Style" id="choice_33_1_4">
+                      <label for="choice_33_1_4" id="label_33_1_4">
+                        Night Life
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <div class="form-group">
+                <label for="loging-input">Where you slept:</label>
+                <input class="form-control" id="loging-input" type="text" />
+              </div>
+
+              <div class="form-group">
+                <label for="activity-input">Activities:</label>
+                <input class="form-control" id="activity-input" type="text" />
+              </div>
+              <button class="btn btn-primary" id="add-getaway" type="submit">
+                Submit
+              </button>
+        </form>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="jumbotron text-center">
-        <h1>Route 66</h1>
-    </div>
-</div>
-<div class="container" id="train-schedule">
-    <div class="card">
-        <div class="card-heading text-center">
-            <h3>Tell Us about your Road Trip</h3>
-        </div>
-
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>State</th>
-                    <th>City</th>
-                    <th>Type</th>
-                    <th>Accomodations</th>
-                    <th>Activities</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-
-    </div>
-
-</div>
-<div class="container mt-5">
-    <div class="card">
-        <div class="card-heading text-center">
-            <h3>Add New Getaway</h3>
-        </div>
-        <div class="card-body">
-            <form role="form">
-                <div class="form-group">
-                    <label for="state-input">State:</label>
-                    <input class="form-control" id="state-input" type="text" />
-                </div>
-                <div class="form-group">
-                    <label for="city-input">City:</label>
-                    <input class="form-control" id="city-input" type="text" />
-                </div>
-                <div class="form-group">
-                    <label for="type-input">Type of getaway:</label>
-                    <input class="form-control" id="type-input" type="text" />
-                </div>
-                <div class="form-group">
-                    <label for="loging-input">Where you slept:</label>
-                    <input class="form-control" id="loging-input" type="text" />
-                </div>
-             
-                <div class="form-group">
-                        <label for="activity-input">Activities:</label>
-                        <input class="form-control" id="activity-input" type="text" />
-                    </div>
-                <button class="btn btn-primary" id="add-getaway" type="submit">
-                    Submit
-                </button>
-            </form>
-        </div>
-    </div>
-</div>
 
 
 
