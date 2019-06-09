@@ -17,7 +17,9 @@ module.exports = function(app) {
 
   // Delete a roadTrip by id
   app.delete("/api/roadTrips/:id", function(req, res) {
-    db.RoadTrip.destroy({ where: { id: req.params.id } }).then(function(dbRoadTrip) {
+    db.RoadTrip.destroy({ where: { id: req.params.id } }).then(function(
+      dbRoadTrip
+    ) {
       res.json(dbRoadTrip);
     });
   });

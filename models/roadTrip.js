@@ -32,6 +32,9 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
+
   // Return the model we defined.
   return roadTrip;
 };
+
+
