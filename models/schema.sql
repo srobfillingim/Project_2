@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS roadtrip_db;
-CREATE DATABASE roadtrp_db;
+CREATE DATABASE roadtirp_db;
 USE roadtrip_db;
 
 
