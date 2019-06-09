@@ -1,21 +1,40 @@
-// Dependencies
-// =============================================================
+module.exports = function(sequelize, DataTypes) {
+  var roadTrip = sequelize.define("roadTrip", {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+      allowNull: false
+    },
+    state: {
+      type: DataTypes.STRING(100),
+      allowNull: false
+    },
+    city: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    activities: {
+      type: DataTypes.STRING(30),
+      allowNull: false
+    },
+    weather: {
+      type: DataTypes.STRING(30),
+      allowNull: false
+    },
+    vibeType: {
+      type: DataTypes.STRING(1000),
+      allowNull: false
+    },
+    restStop: {
+      type: DataTypes.STRING(30),
+      allowNull: false
+    }
+  });
 
-// Sequelize (capital) references the standard library
-var Sequelize = require("sequelize");
-// sequelize (lowercase) references my connection to the DB.
-var sequelize = require("../config/connection.js");
 
-// Creates a "Book" model that matches up with DB
-var roadTrip = sequelize.define("roadTrip", {
-  city: Sequelize.STRING,
-  state: Sequelize.STRING,
-  activity: Sequelize.STRING,
-  weather: Sequelize.INTEGER
-});
+  // Return the model we defined.
+  return roadTrip;
+};
 
-// Syncs with DB
-roadTrip.sync();
 
-// Makes the Book Model available for other files (will also create a table)
-module.exports = roadTrip;
