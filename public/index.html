@@ -5,6 +5,7 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="styles/styles.css" type="text/styles">
+
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
@@ -14,8 +15,10 @@
 
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,6 +34,7 @@
         <li> <a href="index.html">Home</a></li>
         <li><a href="About.html">About us</a></li>
         <li><a href="browse.html">Browse</a></li>
+
         <li><a href="testimonials.html">Testimonials</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
@@ -41,34 +45,47 @@
       </ul>
     </div>
   </nav>
-  <div class="container">
 
-
-    <br>
-    <div class="row">
-      <div class="col s12"><span class="card">
-
-
-
-
+  <br>
+  <div class="row">
+    <div class="col s12">
+      <span class="card">
+        <div class="container">
           <div class="card-heading text-center">
             <h3>Add New Getaway</h3>
           </div>
           <div class="card-body">
             <form role="form">
               <div class="form-group">
-                <label for="state-input">State:</label>
-                <input class="form-control" id="state-input" type="text" />
-              </div>
-              <div class="form-group">
-                <label for="city-input">City:</label>
+                <label for="city-input" label>
+                  <h6>City:</h6>
+                </label>
                 <input class="form-control" id="city-input" type="text" />
+              </div>
+              <!-- Compiled and minified JavaScript -->
+              <div class="form-group">
+
+                <ul id="dropdown" class="dropdown-content">
+                  <li value="Arizona"><a href="#">Arizona</a></li>
+                  <li value="California"><a href="#">California</a></li>
+                  <li value="Illinois"><a href="#">Illinois</a></li>
+                  <li value="Kansas"><a href="#">Kansas</a></li>
+                  <li value="Missouri"><a href="#">Missouri</a></li>
+                  <li value="Oklahoma"><a href="#">Oklahoma</a></li>
+                  <li value="New_Mexico"><a href="#">New Mexico</a></li>
+                  <li value="Texas"><a href="#">Texas</a></li>
+                </ul>
+                <ul class="dds">
+                  <li><a class="dropdown-trigger" data-target="dropdown">
+                      What State Did you Visit <i class="material-icons">arrow_drop_down</i></a>
+                  </li>
+                </ul>
               </div>
               <div class="form-group">
                 <ul id="getaway_type" class="form_checks">
                   <li id="types_1" class="check">
                     <label for="type-input" class="check_label">
-                      Type of Getaway
+                      <h6> Type of Getaway</h6>
                     </label>
                     <div class="form-group">
                       <ul class="check_checkbox" id="input_33_1">
@@ -99,38 +116,61 @@
                       </ul>
                     </div>
                   </li>
-
-
-                 
-
                   <div class="form-group">
-                    <label for="activity-input">Activities:</label>
-                    <input class="form-control" id="activity-input" type="text" />
-                  </div>
-                  <button class="btn btn-primary" id="add-getaway" type="submit">
-                    Submit
-                  </button>
+                    <ul id="getaway_type" class="form_checks">
+                      <li id="types_1" class="check">
+                        <label for="type-input" class="check_label">
+                          <h6> Where You Slept</h6>
+                        </label>
+                        <div class="form-group" margin="3">
+                          <ul class="gfield_checkbox" id="restStop">
+                            <li class="rest-stop">
+                              <input name="camping-input" class="filled-in" type="checkbox" value="camping"
+                                id="rest-stop">
+                              <label for="rest-stop" id="campin">Camping</label>
+                            </li>
+                            <li class="rest-stop_1_2">
+                              <input name="hotel-input" class="filled-in" type="checkbox" value="hotel"
+                                id="rest-stop_1_2">
+                              <label for="rest-stop_1_2" id="hotel">Hotel</label>
+                            </li>
+                            <li class="rest-stop_1_3">
+                              <input name="motel-input" class="filled-in" type="checkbox" value="motel"
+                                id="rest-stop_1_3">
+                              <label for="rest-stop_1_3" id="motel">Motel</label>
+                            </li>
+                            <li class="rest-stop_1_4">
+                              <input name="airbnb-input" class="filled-in" type="checkbox" value="Airbnb"
+                                id="rest-stop_1_4">
+                              <label for="rest-stop_1_4" id="airbnb">Airbnb</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="form-group">
+                          <label for="activity-input">
+                            <h6>Activities:</h6>
+                          </label>
+                          <input class="form-control" id="activity-input" type="text" />
+                        </div>
+                        <button class="btn btn-primary" id="add-getaway" type="submit">
+                          Submit
+                        </button>
             </form>
           </div>
-      </div>
-    </div>
-    <div class="col s6 offset-s6">
-      <div class="card">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ad totam magni laudantium consequatur unde
-        vitae quam voluptas harum eveniet maiores nesciunt quos officia, nemo accusamus dolorum nisi, ipsa cum.
-      </div>
-    </div>
-  </div>
+        </div>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script> document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, options);
+          });
+
+          // Or with jQuery
+
+          $('.dropdown-trigger').dropdown();</script>
 
 
-
-
-
-
-
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>
