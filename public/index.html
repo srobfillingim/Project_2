@@ -62,55 +62,62 @@
                 </label>
                 <input class="form-control" id="city-input" type="text" />
               </div>
-              <!-- Compiled and minified JavaScript -->
               <div class="form-group">
-
-                <ul id="dropdown" class="dropdown-content">
-                  <li value="Arizona"><a href="#">Arizona</a></li>
-                  <li value="California"><a href="#">California</a></li>
-                  <li value="Illinois"><a href="#">Illinois</a></li>
-                  <li value="Kansas"><a href="#">Kansas</a></li>
-                  <li value="Missouri"><a href="#">Missouri</a></li>
-                  <li value="Oklahoma"><a href="#">Oklahoma</a></li>
-                  <li value="New_Mexico"><a href="#">New Mexico</a></li>
-                  <li value="Texas"><a href="#">Texas</a></li>
-                </ul>
-                <ul class="dds">
-                  <li><a class="dropdown-trigger" data-target="dropdown">
-                      What State Did you Visit <i class="material-icons">arrow_drop_down</i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="form-group">
-                <ul id="getaway_type" class="form_checks">
-                  <li id="types_1" class="check">
-                    <label for="type-input" class="check_label">
-                      <h6> Type of Getaway</h6>
+                <ul id="activites" class="form_states">
+                  <li id="states_id" class="check">
+                    <label for="state-input" class="check_label">
+                      <h6>What state did you visit?</h6>
                     </label>
                     <div class="form-group">
-                      <ul class="check_checkbox" id="input_33_1">
-                        <li class="type1">
-                          <input name="romantic_input" type="checkbox" class="filled-in" value="Romantic" id="type1">
-                          <label for="type1" id="rtrip_type1">
-                            Romantic
+                      <ul class="check_checkbox" id="states_input_id">
+                        <li class="state1">
+                          <input name="illinois_input" type="checkbox" class="filled-in" value="Illinois" id="state1">
+                          <label for="state1" id="rtrip_state1">
+                            Illinois
                           </label>
                         </li>
-                        <li class="type2">
-                          <input name="family_input" type="checkbox" class="filled-in" value="Family" id="type2">
-                          <label for="type2" id="rtrip_type2">
-                            Family
+                        <li class="state2">
+                          <input name="missouri_input" type="checkbox" class="filled-in" value="Missouri" id="state2">
+                          <label for="state2" id="rtrip_state2">
+                            Missouri
                           </label>
                         </li>
-                        <li class="type3">
-                          <input name="friends_input" type="checkbox" class="filled-in" value="Friends" id="type3">
-                          <label for="type3" id="rtrip_type3">
-                            Friends
+                        <li class="state3">
+                          <input name="states_input" type="checkbox" class="filled-in" value="Kansas" id="state3">
+                          <label for="state3" id="rtrip_state3">
+                            Kansas
                           </label>
                         </li>
-                        <li class="type4">
-                          <input name="solo_input" type="checkbox" class="filled-in" value="Solo" id="type4">
-                          <label for="type4" id="rtrip_type4">
-                            Solo
+                        <li class="state4">
+                          <input name="oklahoma_input" type="checkbox" class="filled-in" value="Oklahoma" id="state4">
+                          <label for="state4" id="rtrip_state4">
+                            Oklahoma
+                          </label>
+                        </li>
+                        <li class="state5">
+                          <input name="texas_input" type="checkbox" class="filled-in" value="Texas" id="state5">
+                          <label for="state5" id="rtrip_state5">
+                            Texas
+                          </label>
+                        </li>
+                        <li class="state6">
+                          <input name="new_mexico_input" type="checkbox" class="filled-in" value="New Mexico"
+                            id="state6">
+                          <label for="state6" id="rtrip_state6">
+                            New Mexico
+                          </label>
+                        </li>
+                        <li class="state7">
+                          <input name="arizona_input" type="checkbox" class="filled-in" value="Arizona" id="state7">
+                          <label for="state7" id="rtrip_state7">
+                            Arizona
+                          </label>
+                        </li>
+                        <li class="state8">
+                          <input name="california_input" type="checkbox" class="filled-in" value="California"
+                            id="state8">
+                          <label for="state8" id="rtrip_state8">
+                            California
                           </label>
                         </li>
                       </ul>
@@ -120,41 +127,138 @@
                     <ul id="getaway_type" class="form_checks">
                       <li id="types_1" class="check">
                         <label for="type-input" class="check_label">
-                          <h6> Where You Slept</h6>
+                          <h6> Type of Getaway</h6>
                         </label>
-                        <div class="form-group" margin="3">
-                          <ul class="gfield_checkbox" id="restStop">
-                            <li class="rest-stop">
-                              <input name="camping-input" class="filled-in" type="checkbox" value="camping"
-                                id="rest-stop">
-                              <label for="rest-stop" id="campin">Camping</label>
+                        <div class="form-group">
+                          <ul class="check_checkbox" id="input_33_1">
+                            <li class="type1">
+                              <input name="romantic_input" type="checkbox" class="filled-in" value="Romantic"
+                                id="type1">
+                              <label for="type1" id="rtrip_type1">
+                                Romantic
+                              </label>
                             </li>
-                            <li class="rest-stop_1_2">
-                              <input name="hotel-input" class="filled-in" type="checkbox" value="hotel"
-                                id="rest-stop_1_2">
-                              <label for="rest-stop_1_2" id="hotel">Hotel</label>
+                            <li class="type2">
+                              <input name="family_input" type="checkbox" class="filled-in" value="Family" id="type2">
+                              <label for="type2" id="rtrip_type2">
+                                Family
+                              </label>
                             </li>
-                            <li class="rest-stop_1_3">
-                              <input name="motel-input" class="filled-in" type="checkbox" value="motel"
-                                id="rest-stop_1_3">
-                              <label for="rest-stop_1_3" id="motel">Motel</label>
+                            <li class="type3">
+                              <input name="friends_input" type="checkbox" class="filled-in" value="Friends" id="type3">
+                              <label for="type3" id="rtrip_type3">
+                                Friends
+                              </label>
                             </li>
-                            <li class="rest-stop_1_4">
-                              <input name="airbnb-input" class="filled-in" type="checkbox" value="Airbnb"
-                                id="rest-stop_1_4">
-                              <label for="rest-stop_1_4" id="airbnb">Airbnb</label>
+                            <li class="type4">
+                              <input name="solo_input" type="checkbox" class="filled-in" value="Solo" id="type4">
+                              <label for="type4" id="rtrip_type4">
+                                Solo
+                              </label>
                             </li>
                           </ul>
                         </div>
-                        <div class="form-group">
-                          <label for="activity-input">
-                            <h6>Activities:</h6>
-                          </label>
-                          <input class="form-control" id="activity-input" type="text" />
-                        </div>
-                        <button class="btn btn-primary" id="add-getaway" type="submit">
-                          Submit
-                        </button>
+                      </li>
+                      <div class="form-group">
+                        <ul id="getaway_type" class="form_checks">
+                          <li id="types_1" class="check">
+                            <label for="type-input" class="check_label">
+                              <h6> Where You Slept</h6>
+                            </label>
+                            <div class="form-group" margin="3">
+                              <ul class="gfield_checkbox" id="restStop">
+                                <li class="rest-stop">
+                                  <input name="camping-input" class="filled-in" type="checkbox" value="camping"
+                                    id="rest-stop">
+                                  <label for="rest-stop" id="campin">Camping</label>
+                                </li>
+                                <li class="rest-stop_1_2">
+                                  <input name="hotel-input" class="filled-in" type="checkbox" value="hotel"
+                                    id="rest-stop_1_2">
+                                  <label for="rest-stop_1_2" id="hotel">Hotel</label>
+                                </li>
+                                <li class="rest-stop_1_3">
+                                  <input name="motel-input" class="filled-in" type="checkbox" value="motel"
+                                    id="rest-stop_1_3">
+                                  <label for="rest-stop_1_3" id="motel">Motel</label>
+                                </li>
+                                <li class="rest-stop_1_4">
+                                  <input name="airbnb-input" class="filled-in" type="checkbox" value="Airbnb"
+                                    id="rest-stop_1_4">
+                                  <label for="rest-stop_1_4" id="airbnb">Airbnb</label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="form-group">
+                              <ul id="activites" class="form_activities">
+                                <li id="activities_1" class="check">
+                                  <label for="activity-input" class="check_label">
+                                    <h6>Activites</h6>
+                                  </label>
+                                  <div class="form-group">
+                                    <ul class="check_checkbox" id="input_33_1">
+                                      <li class="activity1">
+                                        <input name="museum_input" type="checkbox" class="filled-in" value="Museum"
+                                          id="activity1">
+                                        <label for="activity1" id="rtrip_activity1">
+                                          Museum
+                                        </label>
+                                      </li>
+                                      <li class="activity2">
+                                        <input name="camping_input" type="checkbox" class="filled-in" value="Camping"
+                                          id="activity2">
+                                        <label for="activity2" id="rtrip_activity2">
+                                          Camping
+                                        </label>
+                                      </li>
+                                      <li class="activity3">
+                                        <input name="water_activities_input" type="checkbox" class="filled-in"
+                                          value="Water Activities" id="activity3">
+                                        <label for="activity3" id="rtrip_activity3">
+                                          Water Activities
+                                        </label>
+                                      </li>
+                                      <li class="activity4">
+                                        <input name="theater_input" type="checkbox" class="filled-in" value="Theater"
+                                          id="activity4">
+                                        <label for="activity4" id="rtrip_activity4">
+                                          Theater
+                                        </label>
+                                      </li>
+                                      <li class="activity5">
+                                        <input name="hiking_input" type="checkbox" class="filled-in" value="Hiking"
+                                          id="activity5">
+                                        <label for="activity5" id="rtrip_activity5">
+                                          Hiking
+                                        </label>
+                                      </li>
+                                      <li class="activity6">
+                                        <input name="diner_input" type="checkbox" class="filled-in" value="Diner"
+                                          id="activity6">
+                                        <label for="activity6" id="rtrip_activity6">
+                                          Diner
+                                        </label>
+                                      </li>
+                                      <li class="activity7">
+                                        <input name="gun_show_input" type="checkbox" class="filled-in" value="Gun Show"
+                                          id="activity7">
+                                        <label for="activity7" id="rtrip_activity7">
+                                          Gun Show
+                                        </label>
+                                      </li>
+                                      <li class="activity8">
+                                        <input name="roadside_attraction_input" type="checkbox" class="filled-in"
+                                          value="Roadside Attraction" id="activity8">
+                                        <label for="activity8" id="rtrip_activity8">
+                                          Roadside Attraction
+                                        </label>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <button class="btn btn-primary" id="add-getaway" type="submit">
+                                  Submit
+                                </button>
             </form>
           </div>
         </div>
