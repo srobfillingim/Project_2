@@ -25,10 +25,10 @@ INSERT INTO activities (activities, states) values ('hiking',6);
 INSERT INTO activities (activities, states) values ('diner',7);
 INSERT INTO activities (activities, states) values ('roadside attraction',8);
 
-INSERT INTO videType (vibeType, states) values ('romantic',1);
-INSERT INTO videType (vibeType, states) values ('family',2);
-INSERT INTO videType (vibeType, states) values ('friends',3);
-INSERT INTO videType (vibeType, states) values ('solo',4);
+INSERT INTO vibeType (vibeType, states) values ('romantic',1);
+INSERT INTO vibeType (vibeType, states) values ('family',2);
+INSERT INTO vibeType (vibeType, states) values ('friends',3);
+INSERT INTO vibeType (vibeType, states) values ('solo',4);
 
 
 

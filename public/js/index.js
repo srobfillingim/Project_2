@@ -29,9 +29,6 @@ var API = {
     });
   }
 };
-
-
-
 // refreshRoadTrips gets new roadTrips from the db and repopulates the list
 var refreshRoadTrips = function() {
   API.getRoadTrips().then(function(data) {
