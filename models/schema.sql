@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS roadtrip_db;
-CREATE DATABASE roadtirp_db;
+CREATE DATABASE roadtrip_db;
 USE roadtrip_db;
 
 CREATE TABLE roadTrip(
@@ -13,39 +13,31 @@ CREATE TABLE roadTrip(
 
 CREATE TABLE states(
   id INTEGER(255) AUTO_INCREMENT NOT NULL,
-  PRIMARY KEY (id),
+  states VARCHAR(255),
+  PRIMARY KEY (id)
 );
 
  CREATE TABLE city(
   id INTEGER(255) AUTO_INCREMENT NOT NULL,
-  states INTEGER(255),
-  PRIMARY KEY (id),
+  states VARCHAR(255),
+  PRIMARY KEY (id)
  );
 
 CREATE TABLE activities(
   id INTEGER(255) AUTO_INCREMENT NOT NULL,
-  states VARCHAR(255),
-  city VARCHAR(255),
-  PRIMARY KEY (id),
+  activities VARCHAR(255),
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE vibeType(
   id INTEGER(255) AUTO_INCREMENT NOT NULL,
-  states VARCHAR(255),
-  city VARCHAR(255),
-  PRIMARY KEY (id),
+  vibeType VARCHAR(255),
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE restStop(
   id INTEGER(255) AUTO_INCREMENT NOT NULL,
   states VARCHAR(255),
   city VARCHAR(255),
-  PRIMARY KEY (id),
+  PRIMARY KEY (id)
 );
-
--- CREATE TABLE weather(
---   id INTEGER(255) AUTO_INCREMENT NOT NULL,
---   states VARCHAR(255),
---   city VARCHAR(255),
---   PRIMARY KEY (id),
--- )
