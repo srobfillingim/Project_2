@@ -18,10 +18,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(30),
       allowNull: false
     },
-    weather: {
-      type: DataTypes.STRING(30),
-      allowNull: false
-    },
     vibeType: {
       type: DataTypes.STRING(1000),
       allowNull: false

@@ -30,12 +30,7 @@ INSERT INTO vibeType (vibeType) values ('family');
 INSERT INTO vibeType (vibeType) values ('friends');
 INSERT INTO vibeType (vibeType) values ('solo');
 
-
-
 INSERT INTO restStop (restStop) values ('camping');
 INSERT INTO restStop (restStop) values ('hotel');
 INSERT INTO restStop (restStop) values ('motel');
 INSERT INTO restStop (restStop) values ('airbnb');
-
-
-
