@@ -23,7 +23,7 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: "active"
     }
   });
-  // set association to movies in watchlist by user;
+  // set association to roadTrips in findRoadTrip by user;
   User.associate = function(models) {
     User.hasMany(models.watchlist, {
       onDelete: "cascade"
